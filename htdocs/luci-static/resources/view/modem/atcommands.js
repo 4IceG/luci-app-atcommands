@@ -7,9 +7,9 @@
 'require view';
 
 /*
-
-	Copyright 2022 Rafał Wabik - IceG - From eko.one.pl forum
+	Copyright 2022-2023 Rafał Wabik - IceG - From eko.one.pl forum
 	
+	Licensed to the GNU General Public License v3.0.
 */
 
 
@@ -24,6 +24,8 @@ return view.extend({
 			var out = document.querySelector('.atcommand-output');
 			out.style.display = '';
 
+			res.stdout = res.stdout.replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm, "")
+
 			dom.content(out, [ res.stdout || '', res.stderr || '' ]);
 			
 		}).catch(function(err) {
@@ -31,8 +33,7 @@ return view.extend({
 		}).finally(function() {
 			for (var i = 0; i < buttons.length; i++)
 			buttons[i].removeAttribute('disabled');
-			//var ov = document.getElementById('cmdvalue');
-			//ov.value = '';
+
 		});
 	},
 
@@ -149,19 +150,19 @@ return view.extend({
 				E('hr'),
 				E('div', { 'class': 'right' }, [
 					E('button', {
-						'class': 'btn cbi-button',
+						'class': 'cbi-button cbi-button-remove',
 						'id': 'clr',
 						'click': ui.createHandlerFn(this, 'handleClear')
 					}, [ _('Clear form') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
-						'class': 'cbi-button cbi-button-neutral reconnect',
+						'class': 'cbi-button cbi-button-action important',
 						'id': 'execute',
 						'click': ui.createHandlerFn(this, 'handleGo')
 					}, [ _('Send command') ]),
 				]),
 				E('p', _('Reply')),
-				E('pre', { 'class': 'atcommand-output', 'style': 'display:none; border-radius: 5px; box-shadow: 2px 2px 7px #e0e0e0 !important; font-family: monospace' }),
+				E('pre', { 'class': 'atcommand-output', 'id': 'preout', 'style': 'display:none; border: 1px solid var(--border-color-medium); border-radius: 5px; font-family: monospace' }),
 
 			]);
 	},
