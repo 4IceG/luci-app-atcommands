@@ -5,13 +5,12 @@
 ![GitHub forks](https://img.shields.io/github/forks/4IceG/luci-app-atcommands?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/4IceG/luci-app-atcommands/total)
 
-### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> LuCI interface for the sms-tool. The user interface supports only AT commands.
+#### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> LuCI interface for the sms-tool. The user interface supports only AT commands.
 
-### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Interfejs LuCI dla programu sms-tool. Interfejs tylko do wysyłania poleceń AT.
+#### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Interfejs LuCI dla programu sms-tool. Interfejs tylko do wysyłania poleceń AT.
 
 
-
-## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Instalacja
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Instalacja
 
 #### Package dependencies for conventional modems.
 Modem drivers are required for proper operation.
@@ -29,6 +28,8 @@ opkg install sms-tool
 
 #### 1b. Download the sms-tool package and install manualy.
 An example link to the package.
+
+In the link below, replace ```*architecture*``` with the architecture of your router, e.g. arm_cortex-a7_neon-vfpv4, mipsel_24kc.
 ``` bash
 https://downloads.openwrt.org/snapshots/packages/*architecture*/packages/sms-tool_2022-03-21-f07699ab-1_*architecture*.ipk
 ```
@@ -40,7 +41,7 @@ opkg install luci-app-atcommands
 For images downloaded from eko.one.pl.
 Installation procedure is similar, only there is no need to manually download the sms-tool package.
 
-## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> User compilation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Kompilacja przez użytkownika
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> User compilation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Kompilacja przez użytkownika
 ``` bash
 #The package can be added to Openwrt sources in two ways:
 
@@ -73,6 +74,6 @@ make V=s -j1 feeds/luci/applications/luci-app-atcommands/compile
 ![](https://github.com/4IceG/Personal_data/blob/master/luci-app-atcommandsa.png?raw=true)
 ![](https://github.com/4IceG/Personal_data/blob/master/luci-app-atcommandsb.png?raw=true)
 
-## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Thanks to / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Podziękowania dla
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Thanks to / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Podziękowania dla
 - [obsy (Cezary Jackiewicz)](https://github.com/obsy)
 
