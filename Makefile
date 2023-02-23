@@ -11,7 +11,7 @@ LUCI_TITLE:=LuCI JS Support for AT commands
 LUCI_DESCRIPTION:=LuCI JS interface for the sms-tool. The user interface supports only AT commands.
 LUCI_DEPENDS:=+sms-tool
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.0.3-20230106
+PKG_VERSION:=1.0.4-20230223
 
 define Package/luci-app-atcommands/conffiles
 /etc/config/atcommands
