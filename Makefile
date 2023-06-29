@@ -8,6 +8,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-atcommands
 LUCI_TITLE:=LuCI JS Support for AT commands
+MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DESCRIPTION:=LuCI JS interface for the sms-tool. The user interface supports only AT commands.
 LUCI_DEPENDS:=+sms-tool
 LUCI_PKGARCH:=all
