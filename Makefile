@@ -12,7 +12,7 @@ MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DESCRIPTION:=LuCI JS interface for the sms-tool. The user interface supports only AT commands.
 LUCI_DEPENDS:=+sms-tool
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.0.4-20230223
+PKG_VERSION:=1.0.5-20231003
 
 define Package/luci-app-atcommands/conffiles
 /etc/config/atcommands
