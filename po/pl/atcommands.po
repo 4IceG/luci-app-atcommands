@@ -46,8 +46,8 @@ msgstr "Wybierz jeden z dostępnych portów ttyUSBX."
 msgid "Please select a port"
 msgstr "Proszę wybrać port"
 
-msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location '/etc/modem/atcommands.user'."
-msgstr "Każda linijka powinna mieć następujący format: 'Opis polecenia AT;polecenie AT'. Dla wygody użytkownika polecenia zapisywane są w pliku /etc/modem/atcommands.user'."
+msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/atcommands.user</code>."
+msgstr "Każda linijka powinna mieć następujący format: 'Opis polecenia AT;polecenie AT'. Dla wygody użytkownika polecenia zapisywane są w pliku <code>/etc/modem/atcommands.user</code>."
 
-msgid "Press [Enter] to send the command, press [Delete] to delete the command."
-msgstr "Wciśnij [Enter] aby wysłać polecenie, wciśnij [Delete] aby usunąć."
+msgid "Press [Enter] to send the command, press [Delete] to delete the command"
+msgstr "Wciśnij [Enter] aby wysłać polecenie, wciśnij [Delete] aby usunąć"

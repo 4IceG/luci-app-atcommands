@@ -38,7 +38,7 @@ return view.extend({
 		o.rmempty = false;
 
 		o = s.option(form.TextValue, '_tmpl', _('User AT commands'),
-			_("Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location '/etc/modem/atcommands.user'."));
+			_("Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/atcommands.user</code>."));
 		o.rows = 20;
 		o.cfgvalue = function(section_id) {
 			return fs.trimmed('/etc/modem/atcommands.user');

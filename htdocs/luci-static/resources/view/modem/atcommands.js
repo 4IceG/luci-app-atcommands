@@ -25,6 +25,7 @@ return view.extend({
 			out.style.display = '';
 
 			res.stdout = res.stdout?.replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm, "") || '';
+			res.stderr = res.stderr?.replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm, "") || '';
 
 			dom.content(out, [ res.stdout || '', res.stderr || '' ]);
 			
@@ -124,7 +125,7 @@ return view.extend({
 								'style': 'margin:5px 0; width:100%;',
 								'type': 'text',
 								'id': 'cmdvalue',
-								'data-tooltip': _('Press [Enter] to send the command, press [Delete] to delete the command.'),
+								'data-tooltip': _('Press [Enter] to send the command, press [Delete] to delete the command'),
 								'keydown': function(ev) {
 									 if (ev.keyCode === 13)  
 										{
