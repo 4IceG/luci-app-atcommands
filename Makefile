@@ -1,5 +1,5 @@
 #
-# Copyright 2022-2023 Rafał Wabik - IceG - From eko.one.pl forum
+# Copyright 2022-2024 Rafał Wabik - IceG - From eko.one.pl forum
 #
 # Licensed to the GNU General Public License v3.0.
 #
@@ -12,7 +12,7 @@ MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DESCRIPTION:=LuCI JS interface for the sms-tool. The user interface supports only AT commands.
 LUCI_DEPENDS:=+sms-tool
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.0.6-20231004
+PKG_VERSION:=1.0.8-20240102
 
 define Package/luci-app-atcommands/conffiles
 /etc/config/atcommands
