@@ -32,7 +32,7 @@ msgid "Reply"
 msgstr "回显" 
 
 msgid "User interface for handling AT commands using sms-tool. More information about the sms-tool on the %seko.one.pl forum%s."
-msgstr "用于通过 sms-tool 处理 AT 指令的用户界面。关于 sms-tool 的更多信息在 %forum seko.one.pl%s。"
+msgstr "用于通过 sms-tool 处理 AT 指令的用户界面。关于 sms-tool 的更多信息在 %s论坛 seko.one.pl%s。"
 
 msgid "Configuration sms-tool"
 msgstr "配置 sms-tool"
@@ -41,7 +41,7 @@ msgid "Configuration panel for sms-tool and gui application."
 msgstr "sms-tool 和图形界面配置面板。"
 
 msgid "Port for communication with the modem"
-msgstr "与模块通信的端口"
+msgstr "模块通信端口"
 
 msgid "Select one of the available ttyUSBX ports."
 msgstr "请选择可用的 ttyUSBX 端口。"
